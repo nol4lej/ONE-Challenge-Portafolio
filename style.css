@@ -374,11 +374,13 @@ section.formcontato{
 
 .formcontato__input input{
     border: none;
+    outline: none;
 }
 
 .formcontato__input textarea{
     border: none;
     resize: none;
+    outline: none;
 }
 
 .formcontato__botao{
