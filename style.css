@@ -8,7 +8,10 @@ coloque nas sessões indicadas*/
     /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
     /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
    --cor-de-fundo: #F5F5F5;
+   --cor-de-fundo-sec: #FFFFFF;
+   --cor-bg-sec: #EAF2FD;
    --cor-de-link: #000;
+   --cor-de-text: #464646;
 }
 
 body {
@@ -18,13 +21,15 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1;
+    color: var(--cor-de-text);
 }
 ol, ul,li {
     list-style: none;
 }
 a{
     text-decoration: none;
-    color: var(--cor-de-link);
+    /* color: var(--cor-de-link); */
+    color: var(--cor-de-text);
 }
 
 /*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
@@ -42,31 +47,207 @@ https://en.bem.info/methodology/quick-start/*/
 /*Sección Menu*/
 
 section.menu{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    justify-content: space-between;
+}
 
+.menu__header{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.menu__header img{
+    width: 24px;
+    height: 24px;
+}
+
+.menu__title{
+    font-size: 16px;
+}
+
+.menu__nav{
+    display: flex;
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.menu__list{
+    display: none;
 }
 
 /*Sección Title*/
 
 section.title{
+    padding: 16px;
+}
 
+.title__profile{
+    width: 98px;
+    height: 98px;
+}
+
+.title__bio{
+    font-size: 22px;
+}
+
+.title__subsection{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+.title__network{
+    display: flex;
+    padding: 0;
+    gap: 16px;
+}
+
+.title__network__item{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 700;
 }
 
 /*Sección About*/
 
 section.about{
+    background-color: var(--cor-bg-sec);
+    padding: 16px;
+}
 
+.about__title{
+    font-size: 22px;
+}
+
+.about__paragraph{
+    font-size: 14px;
+    font-weight: 100;
+}
+
+/*Sección skills*/
+
+section.skills{
+    padding: 16px;
+    background-color: var(--cor-de-fundo);
+}
+
+.skills__title{
+    text-align: center;
+    font-size: 22px;
+}
+
+.skills__line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+}
+
+.skills__box{
+    background-color: var(--cor-de-fundo-sec);
+    height: 118px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 32px;
+}
+
+.skills__item{
+    display: grid;
+    gap: 8px;
+    padding-left: 16px;
+}
+
+.skills__name{
+    font-size: 16px;
+    font-weight: 700;
 }
 
 /*Sección Hobbies*/
 
 section.hobbies{
-    
+    padding: 16px;
+    background-color: var(--cor-de-fundo);
+}
+
+.hobbies__title{
+    text-align: center;
+    font-size: 22px;
+}
+
+.hobbies__line{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 16px;
+}
+
+.hobbies__box{
+    background-color: var(--cor-de-fundo-sec);
+    height: 118px;
+    display: flex;
+    align-items: flex-end;
+    margin-top: 32px;
+}
+
+.hobbies__item{
+    display: grid;
+    gap: 8px;
+    padding-left: 16px;
+}
+
+.hobbies__name{
+    font-size: 16px;
+    font-weight: 700;
 }
 
 /* Experiencia Académica*/
 
 section.academic{
+    padding: 32px;
+    background-color: var(--cor-bg-sec);
+}
 
+.academic__title{
+    text-align: center;
+}
+
+.academic__courses{
+    margin-top: 32px;
+}
+
+.academic__courses__box{
+    /* margin-top: 16px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__courses__list{
+    padding: 0;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--cor-de-fundo-sec);
+    width: 296px;
+    height: 118px;
+}
+
+.academic__courses__item__img img{
+    width: 84px;
+    height: 58px;
+}
+
+.academic__courses__item__title h4{
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+.academic__courses__item__subtitle p{
+    margin: 0;
+    font-size: 14px;
 }
 
 /* experiencia*/
