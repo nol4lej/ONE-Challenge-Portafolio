@@ -12,6 +12,8 @@ coloque nas sessões indicadas*/
    --cor-bg-sec: #EAF2FD;
    --cor-de-link: #000;
    --cor-de-text: #464646;
+   --cor-btn: #2A7AE4;
+   --cor-border: #C8C8C8;
 }
 
 body {
@@ -232,6 +234,8 @@ section.academic{
     align-items: center;
     background-color: var(--cor-de-fundo-sec);
     width: 296px;
+    min-width: 100%; 
+    max-width: 50%;
     height: 118px;
 }
 
@@ -253,19 +257,141 @@ section.academic{
 /* experiencia*/
 
 section.experience{
-
+    padding: 32px;
 }
+
+.experience__section__title{
+    text-align: center;
+}
+
+.experience__projects{
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.experience__img{
+    width: 100%;
+    margin-bottom: 8px;
+}
+
+.experience__info{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.experience__title{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.experience__text{
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.experience__description{
+    display: flex;
+    gap: 16px;
+}
+
+.experiencia__botao--repo{
+    border: 1px solid var(--cor-btn);
+    background: none;
+    font-size: 14px;
+    color: var(--cor-btn);
+    padding: 10px;
+}
+
+.experience__botao--demo{
+    border: 1px solid var(--cor-btn);
+    background: var(--cor-btn);
+    font-size: 14px;
+    color: var(--cor-de-fundo-sec);
+    padding: 10px;
+}
+
+
 
 /*Contacto*/
 
 section.formcontato{
+    padding: 32px;
+    background-color: var(--cor-bg-sec);
+}
 
+.formcontato__img{
+    display: none;
+}
+
+.formcontato__title{
+    text-align: center;
+}
+
+.formcontato__subtext{
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+}
+
+.formcontato__form{
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.formcontato__input{
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    gap: 4px;
+    background-color: var(--cor-de-fundo-sec);
+    border-bottom: 2px solid var(--cor-border);
+    border-radius: 7px;
+}
+
+.input__title{
+    margin: 0;
+    font-size: 12px;
+    font-weight: 100;
+}
+
+.formcontato__input input{
+    border: none;
+}
+
+.formcontato__input textarea{
+    border: none;
+    resize: none;
+}
+
+.formcontato__botao{
+    width: max-content;
+    border: 1px solid var(--cor-btn);
+    background: var(--cor-btn);
+    font-size: 14px;
+    color: var(--cor-de-fundo-sec);
+    padding: 10px;
 }
 
 /*footeer*/
 
 section.footer{
-   
+   padding: 32px;
+}
+
+.footer__rodape{
+    text-align: center;
+}
+
+.footer__rodape p{
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 /* Vamos a desafiarnos trabajando con responsividad?
