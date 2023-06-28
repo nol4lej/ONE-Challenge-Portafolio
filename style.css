@@ -86,6 +86,12 @@ section.title{
     padding: 16px;
 }
 
+.title__div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .title__profile{
     width: 98px;
     height: 98px;
@@ -216,6 +222,8 @@ section.academic{
 
 .academic__courses{
     margin-top: 32px;
+    display: flex;
+    flex-direction: column;
 }
 
 .academic__courses__box{
@@ -327,10 +335,6 @@ section.formcontato{
     display: none;
 }
 
-.formcontato__title{
-    text-align: center;
-}
-
 .formcontato__subtext{
     font-size: 16px;
     font-weight: 400;
@@ -404,14 +408,89 @@ Utiliza las referencias de los breakpoints @media abajo */
 /* Menú */
 
 /*title*/
+    section.title{
+        padding: 32px;
+    }
+
+    .title__div{
+        flex-direction: row;
+        gap: 32px;
+    }
+
+    .title__profile{
+        width: 146px;
+        height: 146px;
+    }
+
+    .title__profile{
+        order: 1;
+    }
+
+    .title__network{
+        gap: 32px;
+    }
+
+    .title__network__item{
+        font-size: 16px;
+    }
+
+/*Abouts*/
+    section.about{
+        padding: 32px;
+    }
 
 /*Skills*/
+    section.skills{
+        padding: 32px;
+    }
+
+    .skills__line{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 16px;
+    }
 
 /*Hobbies*/
+    section.hobbies{
+        padding: 32px;
+    }
+
+    .hobbies__line{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 16px;
+    }
 
 /*Formación Académica*/
+    section.academic{
+        padding: 32px;
+    }
+
+    .academic__courses{
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .academic__courses__item__img{
+        width: 224px;
+        min-width: 100%;
+        max-width: 100%;
+    }
 
 /*Experiencia Profesional*/
+    section.experience{
+        padding: 32px;
+    }
+
+    .experience__projects{
+        align-items: center;
+    }
+
+    .experience__img{
+        width: 704px;
+        height: 320px;
+    }
 
 }
 
