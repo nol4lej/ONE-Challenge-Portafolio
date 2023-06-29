@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <!-- Fonte del Proyecto Raleway -->
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
-    <title> Mi Portafolio</title>
+    <title>Portafolio Challenge - ONE</title>
 </head>
 <body>
     <!-- Sección del Menú  -->
@@ -18,7 +18,7 @@
         <section class="menu">
             <header class="menu__header">
                 <img src="assets\vector.png">
-                <h3 class="menu__title">Fulana de Tal</h3>
+                <h3 class="menu__title">Nolasco Medina</h3>
             </header>
             <nav class="menu__nav">
                 <ul class="menu__list">
@@ -38,7 +38,7 @@
             <div class="title__div">
                 <img class="title__profile" src="assets\profile.png">
                 <div class="title__container">
-                    <h2 class="title__bio">Hola, mi nombre es Fulana de Tal y construyo paginas web</h2>
+                    <h2 class="title__bio">Hola, mi nombre es Nolasco Medina y construyo paginas web</h2>
                     <h3 class="title__subsection">Soy formada en .... lorem ipsum sit amet consectetur y actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
                     <ul class="title__network">
                         <!-- Pon los enlaces de tus redes sociales favoritas -->
@@ -267,12 +267,17 @@
                     <form class="formcontato__form" name="form">
                         <label class="formcontato__input" for="">
                             <p class="input__title">Nombre</p>
-                            <input type="text" name="nombre" autocomplete="off" required >
+                            <input type="text" name="nombre" autocomplete="off" minlength="2" pattern="^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$" title="Ingrese solo letras, espacios y tildes" required>
                         </label>
 
                         <label class="formcontato__input">
                             <p class="input__title">E-mail</p>
                             <input type="email" name="email" autocomplete="off" required>
+                        </label>
+
+                        <label class="formcontato__input">
+                            <p class="input__title">Fecha nacimiento</p>
+                            <input id="birth" type="date" name="birth" autocomplete="off" required>
                         </label>
 
                         <label class="formcontato__input">
@@ -294,12 +299,12 @@
         <!-- Sección de Footer -->
         <section class="footer">
             <div class="footer__rodape">
-                <p>Desarrollado por Fulana de Tal</p>
+                <p>Desarrollado por Nolasco Medina / nol4</p>
                 <p>2022</p>
             </div>
         </section>
     </div>
  <!-- Script del documento JavaScript -->
-<script src="validacion.js"></script>
+<script src="/js/date.js"></script>
 </body>
 </html>

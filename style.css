@@ -341,6 +341,7 @@ section.formcontato{
 
 .formcontato__img{
     display: none;
+    
 }
 
 .formcontato__subtext{
@@ -664,10 +665,14 @@ Utiliza las referencias de los breakpoints @media abajo */
         align-items: flex-end;
     }
 
+    .formcontato--esquerda{
+        height: 100%;
+    }
+
     .formcontato__img{
         display: flex;
         width: 464px;
-        height: 593px;
+        height: 100%;
     }
 
     .formcontato__title{
